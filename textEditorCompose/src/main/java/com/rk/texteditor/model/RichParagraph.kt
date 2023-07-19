@@ -1,15 +1,16 @@
 package com.rk.texteditor.model
 
+import androidx.compose.ui.text.ExperimentalTextApi
 import androidx.compose.ui.text.ParagraphStyle
 import androidx.compose.ui.text.TextRange
 import androidx.compose.ui.text.style.LineBreak
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextIndent
 import androidx.compose.ui.unit.sp
+import com.rk.texteditor.ui.test.getRichTextStyleTreeRepresentation
 import com.rk.texteditor.model.RichParagraph.Type.Companion.startText
-import com.mohamedrejeb.richeditor.ui.test.getRichTextStyleTreeRepresentation
-import com.mohamedrejeb.richeditor.utils.fastForEach
-import com.mohamedrejeb.richeditor.utils.fastForEachIndexed
+import com.rk.texteditor.utils.fastForEach
+import com.rk.texteditor.utils.fastForEachIndexed
 
 internal class RichParagraph(
     val key: Int = 0,
@@ -234,6 +235,7 @@ internal class RichParagraph(
     }
 
     companion object {
+        @OptIn(ExperimentalTextApi::class)
         val DefaultParagraphStyle = ParagraphStyle(
             textAlign = TextAlign.Left,
             lineBreak = LineBreak.Heading,

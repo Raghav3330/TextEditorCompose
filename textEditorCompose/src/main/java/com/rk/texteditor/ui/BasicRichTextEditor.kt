@@ -25,6 +25,7 @@ import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.LayoutDirection
 import com.rk.texteditor.model.RichTextState
 import com.rk.texteditor.model.RichTextValue
+import com.rk.texteditor.ui.RichTextClipboardManager
 import kotlinx.coroutines.CoroutineScope
 
 /**

@@ -8,7 +8,6 @@ import androidx.compose.ui.text.withStyle
 import com.rk.texteditor.model.RichSpan
 import com.rk.texteditor.model.RichSpanStyle
 import com.rk.texteditor.model.RichTextConfig
-import com.mohamedrejeb.richeditor.utils.fastForEach
 import kotlin.math.max
 import kotlin.math.min
 

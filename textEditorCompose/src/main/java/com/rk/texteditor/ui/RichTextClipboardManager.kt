@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.ui
+package com.rk.texteditor.ui
 
 import androidx.compose.ui.platform.ClipboardManager
 import androidx.compose.ui.text.AnnotatedString
@@ -8,7 +8,7 @@ import com.rk.texteditor.model.RichParagraph.Type.Companion.startText
 import com.rk.texteditor.model.RichSpanStyle
 import com.rk.texteditor.model.RichTextState
 import com.rk.texteditor.utils.append
-import com.mohamedrejeb.richeditor.utils.fastForEachIndexed
+import com.rk.texteditor.utils.fastForEachIndexed
 import kotlin.math.max
 import kotlin.math.min
 
@@ -42,7 +42,7 @@ internal class RichTextClipboardManager(
                             max(0, selection.min - index),
                             min(selection.max - index, richParagraphStyle.type.startText.length)
                         )
-                        com.rk.texteditor.utils.append(selectedText)
+                        append(selectedText)
                     }
                     index += richParagraphStyle.type.startText.length
                     withStyle(RichSpanStyle.DefaultSpanStyle) {
@@ -58,7 +58,7 @@ internal class RichTextClipboardManager(
                                     !selection.collapsed &&
                                     selection.min < index + 1 &&
                                     selection.max > index
-                                ) com.rk.texteditor.utils.append("\n")
+                                ) append("\n")
                                 index++
                             }
                         }

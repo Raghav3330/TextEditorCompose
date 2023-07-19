@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.ui.test
+package com.rk.texteditor.ui.test
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
@@ -11,7 +11,7 @@ import androidx.compose.ui.unit.dp
 import com.rk.texteditor.model.RichSpan
 import com.rk.texteditor.model.RichTextState
 import com.mohamedrejeb.richeditor.ui.material3.RichTextEditor
-import com.mohamedrejeb.richeditor.utils.fastForEachIndexed
+import com.rk.texteditor.utils.fastForEachIndexed
 
 @Composable
 internal fun DebugRichTextEditor(
