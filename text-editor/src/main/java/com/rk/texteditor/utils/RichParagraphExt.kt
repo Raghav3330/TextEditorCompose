@@ -8,7 +8,7 @@ import androidx.compose.ui.unit.TextUnit
 import com.rk.texteditor.model.RichParagraph
 
 @OptIn(ExperimentalTextApi::class)
-internal fun List<_root_ide_package_.com.rk.texteditor.model.RichParagraph>.getCommonStyle(): ParagraphStyle? {
+internal fun List<RichParagraph>.getCommonStyle(): ParagraphStyle? {
     if (this.isEmpty()) return null
 
     val firstParagraphStyle = this.firstOrNull()?.paragraphStyle ?: return null
@@ -47,8 +47,8 @@ internal fun List<_root_ide_package_.com.rk.texteditor.model.RichParagraph>.getC
     )
 }
 
-internal fun List<_root_ide_package_.com.rk.texteditor.model.RichParagraph>.getCommonType(): _root_ide_package_.com.rk.texteditor.model.RichParagraph.Type? {
-    var type: _root_ide_package_.com.rk.texteditor.model.RichParagraph.Type? = null
+internal fun List<RichParagraph>.getCommonType(): RichParagraph.Type? {
+    var type: RichParagraph.Type? = null
 
     for (paragraph in this) {
         if (type == null) type = paragraph.type
