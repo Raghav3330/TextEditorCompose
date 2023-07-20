@@ -65,5 +65,6 @@ dependencies {
     debugImplementation 'androidx.compose.ui:ui-tooling'
     debugImplementation 'androidx.compose.ui:ui-test-manifest'
 
-    implementation 'com.github.Raghav3330:TextEditorCompose:1.0'
+//    implementation(project(":textEditorCompose"))
+    implementation 'com.github.Raghav3330:TextEditorCompose:v1.0.1'
 }
