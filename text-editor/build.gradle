@@ -3,6 +3,8 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'maven-publish'
 }
+group = 'com.github.Raghav3330'
+version = '1.0'
 
 android {
     namespace 'com.rk.texteditorcompose'
@@ -55,7 +57,7 @@ afterEvaluate{
 
                 groupId = 'com.github.Raghav3330'
                 artifactId = 'text-editor-compose'
-                version = '1.0.0'
+                version = '1.0'
             }
         }
     }
